@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Baba_Predictions.iml" filepath="$PROJECT_DIR$/Baba_Predictions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/babapredictions/babapredictions.iml" filepath="$PROJECT_DIR$/babapredictions/babapredictions.iml" />
+    </modules>
+  </component>
+</project>
+
