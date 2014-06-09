@@ -35,8 +35,8 @@ public class MainActivity extends Activity {
 
         question = (EditText) findViewById(R.id.editText);
         txt = (TextView)findViewById(R.id.textView);
-        final VideoView vv = (VideoView)findViewById(R.id.videoView);
-        vv.setVisibility(vv.INVISIBLE);
+        final VideoView videoView = (VideoView)findViewById(R.id.videoView);
+        videoView.setVisibility(videoView.INVISIBLE);
         final String f = "android.resource://" + getPackageName() + "/" + R.raw.video;
 
         button = (Button) findViewById(R.id.a);
@@ -53,16 +53,16 @@ public class MainActivity extends Activity {
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        Intent intent = new Intent(MainActivity.this, OutputSong.class);
+                        Intent intent = new Intent(getApplicationContext(), OutputSongs.class);
                         startActivity(intent);
                     }
                 }, DELAY);
 
-                vv.setVisibility(vv.VISIBLE);
+                videoView.setVisibility(videoView.VISIBLE);
 
 
-                vv.setVideoURI(Uri.parse(f));
-                vv.start();
+                videoView.setVideoURI(Uri.parse(f));
+                videoView.start();
 
 
             }
